@@ -37,9 +37,10 @@ If your cursor position registers a click, you're good.
 
 ### KDE Plasma
 1. **System Settings → Shortcuts → Add New → Command or Script**
-2. Set the command to: `~/.local/bin/autoclicker.sh`
-3. Set the name to: autoclicker or add any name you like and hit Add
-4. Set the trigger to a free key avoid bare modifier keys like `Alt` alone, they don't register reliably as a standalone trigger. A free function key like `F8` works well.
+2. Set the **command** to: `~/.local/bin/autoclicker.sh`
+3. Set the **name** to: autoclicker or add any name you like
+4. Hit **Add**
+5. Set the trigger to a free key avoid bare modifier keys like `Alt` alone, they don't register reliably as a standalone trigger. A free function key like `F8` works well.
 
 ### GNOME
 **Settings → Keyboard → Keyboard Shortcuts → Custom Shortcuts → Add**, point it at `~/.local/bin/autoclicker.sh`, set your key.
