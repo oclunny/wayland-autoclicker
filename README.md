@@ -44,6 +44,7 @@ If your cursor position registers a click, you're good.
 
 ### GNOME
 **Settings → Keyboard → Keyboard Shortcuts → Custom Shortcuts → Add**, point it at `~/.local/bin/autoclicker.sh`, set your key.
+**(I hope this is it for GNOME, I dont like it so I don't use it as much)**
 
 ### Other desktop environments
 Bind the script to a custom keyboard shortcut using whatever your DE's shortcut settings provide any DE that can run an arbitrary command on a hotkey works.
