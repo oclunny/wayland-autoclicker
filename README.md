@@ -78,6 +78,25 @@ touch /tmp/.autoclicker.stop
 - [`ydotool`](https://github.com/ReimuNotMoe/ydotool)
 - `systemd --user` support (used to run `ydotoold`)
 
+## Why ~10cps and not faster?
+
+I tried pushing this well past 10 clicks/sec (batched `--repeat` calls,
+tuned sleep intervals, minimal `--next-delay`) and consistently hit a wall
+around 10-16 clicks/sec no matter how the script was structured. Benchmarking
+raw `ydotool click -r 100 -d 0` (zero scripting overhead, single invocation,
+zero delay) still landed at the same ceiling.
+
+That points to a fixed minimum delay baked into how `ydotool`/`ydotoold`
+synthesize a click event (likely intentional, so target apps reliably see
+button-down before button-up instead of racing the two events). This looks
+like a hard limit of the tool itself, not something fixable by changing
+sleep intervals or batching invocations differently.
+
+If you need faster than this, you'd likely have to bypass `ydotool`
+entirely and write directly to `/dev/uinput`, and even then there's no
+guarantee the delay may be intentional at the kernel/evdev level, not
+just in ydotool's own code.
+
 ## License
 
 MIT
