@@ -13,7 +13,7 @@ Tested on CachyOS + KDE Plasma (KWin/Wayland), but should work on any Wayland co
 ## Quick setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/wayland-autoclicker.git
+git clone https://github.com/oclunny/wayland-autoclicker.git
 cd wayland-autoclicker
 ./install.sh
 ```
