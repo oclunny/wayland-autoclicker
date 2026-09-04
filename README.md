@@ -15,6 +15,7 @@ Tested on CachyOS + KDE Plasma (KWin/Wayland), but should work on any Wayland co
 ```bash
 git clone https://github.com/oclunny/wayland-autoclicker.git
 cd wayland-autoclicker
+chmod +x install.sh autoclicker.sh
 ./install.sh
 ```
 
@@ -70,7 +71,7 @@ touch /tmp/.autoclicker.stop
 
 ## Requirements
 
-- A Wayland session (this is the whole point — for X11 there are many existing tools already)
+- A Wayland session (this is the whole point for X11 there are many existing tools already)
 - [`ydotool`](https://github.com/ReimuNotMoe/ydotool)
 - `systemd --user` support (used to run `ydotoold`)
 
