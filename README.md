@@ -7,7 +7,7 @@ Tested on CachyOS + KDE Plasma (KWin/Wayland), but should work on any Wayland co
 ## How it works
 
 - Toggles on/off with a single hotkey press
-- Uses `flock` to guarantee only one clicking loop can ever run at a time — no PID tracking, no signal races
+- Uses `flock` to guarantee only one clicking loop can ever run at a time no PID tracking, no signal races
 - Stopping is done by dropping a flag file the loop checks every iteration, so it can't get "stuck" the way PID/kill-based approaches can
 
 ## Quick setup
@@ -24,7 +24,7 @@ The installer will:
 3. Add your user to the `input` group (required for `uinput` access)
 4. Enable and start the `ydotool.service` user daemon
 
-If your user was just added to the `input` group, **log out and back in** before testing — group membership only takes effect on a fresh login.
+If your user was just added to the `input` group, **log out and back in** before testing group membership only takes effect on a fresh login.
 
 Then verify it works standalone:
 ```bash
@@ -44,7 +44,7 @@ If your cursor position registers a click, you're good.
 **Settings → Keyboard → Keyboard Shortcuts → Custom Shortcuts → Add**, point it at `~/.local/bin/autoclicker.sh`, set your key.
 
 ### Other desktop environments
-Bind the script to a custom keyboard shortcut using whatever your DE's shortcut settings provide — any DE that can run an arbitrary command on a hotkey works.
+Bind the script to a custom keyboard shortcut using whatever your DE's shortcut settings provide any DE that can run an arbitrary command on a hotkey works.
 
 ## Usage
 
