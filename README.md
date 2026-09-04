@@ -99,11 +99,11 @@ just in ydotool's own code.
 
 ## Credits
 
-This project is just a thin convenience wrapper — all the actual heavy
+This project is just a thin convenience wrapper all the actual heavy
 lifting (Wayland-compatible input injection via uinput) is done by
 [ydotool](https://github.com/ReimuNotMoe/ydotool) by
 [ReimuNotMoe](https://github.com/ReimuNotMoe). Massive shoutout to that
-project for making Wayland automation possible in the first place —
+project for making Wayland automation possible in the first place
 without it this script wouldn't exist.
 
 ## License
