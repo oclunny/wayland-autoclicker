@@ -97,6 +97,15 @@ entirely and write directly to `/dev/uinput`, and even then there's no
 guarantee the delay may be intentional at the kernel/evdev level, not
 just in ydotool's own code.
 
+## Credits
+
+This project is just a thin convenience wrapper — all the actual heavy
+lifting (Wayland-compatible input injection via uinput) is done by
+[ydotool](https://github.com/ReimuNotMoe/ydotool) by
+[ReimuNotMoe](https://github.com/ReimuNotMoe). Massive shoutout to that
+project for making Wayland automation possible in the first place —
+without it this script wouldn't exist.
+
 ## License
 
 MIT
