@@ -1,3 +1,4 @@
+#OUTDATED
 # wayland-autoclicker
 
 A dead-simple autoclicker for Wayland desktops, built on [`ydotool`](https://github.com/ReimuNotMoe/ydotool) since `xdotool` and other X11-based clickers don't work under Wayland's input security model.
